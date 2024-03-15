@@ -1,0 +1,28 @@
+.container {
+  padding: 20px;
+  border-radius: 5px;
+}
+.task {
+  background-color: rgb(165, 204, 219);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.task input[type="checkbox"] {
+  margin-right: 10px;
+}
+.task:nth-child(odd) {
+  background-color: rgb(173, 217, 230);
+}
+.close {
+  color: #bd3838;
+  font-weight: bold;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.task input[type="checkbox"]:checked + .task-text {
+  text-decoration: line-through;
+}
+.task input[type="checkbox"]:checked + .bg {
+  display: none;
+}
